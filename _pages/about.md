@@ -12,7 +12,4 @@ I am a PhD student at the MIT Operations Research Center, advised by Prof. Dimit
 
 Before MIT, I completed a Bachelor of Engineering with First Class Honours in Engineering Science at the University of Auckland, advised by Prof. Andy Philpott. My undergraduate thesis studied Markov decision processes and distributionally robust optimization.
 
-CV
-======
-
 [Download CV](/files/Karl_Zhu_CV.pdf)
