@@ -7,6 +7,24 @@ author_profile: true
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-* {{ post.title }}. {% if post.type %}{{ post.type }}, {% endif %}{% if post.venue %}{{ post.venue }}, {% endif %}{{ post.date | default: "1900-01-01" | date: "%Y" }}.
-{% endfor %}
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Role</th>
+      <th>Course(s)</th>
+      <th>Institution</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% assign sorted_teaching = site.teaching | sort: "date" | reverse %}
+  {% for post in sorted_teaching %}
+    <tr>
+      <td>{{ post.date | default: "1900-01-01" | date: "%Y" }}</td>
+      <td>{{ post.type }}</td>
+      <td><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></td>
+      <td>{{ post.venue }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
