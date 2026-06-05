@@ -8,25 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student in Operations Research at MIT, advised by Prof. Dimitris Bertsimas. My research focuses on optimization and machine learning methods for high-impact decision problems, with current work in adaptive robust optimization for energy systems and reinforcement learning for healthcare.
+I am a PhD student at the MIT Operations Research Center, advised by Prof. Dimitris Bertsimas. My research develops optimization and machine learning methods for high-stakes decision-making under uncertainty, with applications in energy systems and healthcare.
 
-Before MIT, I completed a Bachelor of Engineering with First Class Honours in Engineering Science at the University of Auckland, advised by Prof. Andy Philpott. My undergraduate thesis studied multi-stage stochastic programming with distributionally robust optimization.
+Before MIT, I completed a Bachelor of Engineering with First Class Honours in Engineering Science at the University of Auckland, advised by Prof. Andy Philpott. My undergraduate thesis studied Markov decision processes and distributionally robust optimization.
 
 CV
 ======
 
 [Download CV](/files/Karl_Zhu_CV.pdf)
-
-Research
-======
-
-My current research includes green ammonia capacity planning and operations under renewable uncertainty, overfitting in adaptive robust optimization, and optimal diagnostic test selection using finite-horizon POMDPs.
-
-I have also worked on integer programming and analytics for finding missing rightful shareholders, machine learning and optimization for industrial energy efficiency, and imaging software for real-time drinking water pathogen detection.
-
-Contact
-======
-
-Email: [karlzhu@mit.edu](mailto:karlzhu@mit.edu)
-
-LinkedIn: [linkedin.com/in/karl-kai-zhu](https://www.linkedin.com/in/karl-kai-zhu/)
