@@ -21,9 +21,6 @@ bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
 
-# Social Sharing
-twitter:
-  username               : &twitter
 facebook:
   username               :
   app_id                 :
@@ -43,9 +40,7 @@ author:
   name             : "Karl Zhu"
   avatar           : "karlzhu.jpg"
   bio              : "PhD student in Operations Research at MIT"
-  location         : "Cambridge, MA"
   employer         : "Massachusetts Institute of Technology"
-  pubmed           :
   googlescholar    :
   email            : "karlzhu@mit.edu"
   researchgate     :
@@ -63,13 +58,11 @@ author:
   impactstory      :
   lastfm           :
   linkedin         :  "karl-kai-zhu"
-  orcid            :
   pinterest        :
   soundcloud       :
   stackoverflow    :
   steam            :
   tumblr           :
-  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -159,7 +152,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      share: true
+      share: false
       related: true
   # _pages
   - scope:
@@ -175,7 +168,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
   # _publications
   - scope:
       path: ""
@@ -183,7 +176,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
   # _portfolio
   - scope:
       path: ""
@@ -191,7 +184,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
   # _talks
   - scope:
       path: ""
@@ -199,7 +192,7 @@ defaults:
     values:
       layout: talk
       author_profile: true
-      share: true
+      share: false
 
 # Sass/SCSS
 sass:
