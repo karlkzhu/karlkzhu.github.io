@@ -7,21 +7,21 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Your Name / Site Title"
+title                    : "Karl Zhu"
 title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
+name                     : &name "Karl Zhu"
+description              : &description "PhD student in Operations Research at MIT"
+url                      : https://karlkzhu.github.io
+baseurl                  : ""
+repository               : "karlkzhu/karlkzhu.github.io"
+teaser                   :
+breadcrumbs              : false
 words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+future                   : false
+read_more                : "disabled"
+talkmap_link             : false
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : false
   disqus:
     shortname            :
   discourse:
@@ -30,24 +30,8 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
-staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : "md5"
-  generatedFields:
-    date:
-      type               : "date"
-      options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  path                   : # blank (default) uses feed.xml
+  path                   :
 
 # SEO Related
 google_site_verification :
@@ -62,18 +46,20 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Open Graph/Twitter default site image
+og_image                 : "karlzhu.jpg"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Karl Zhu"
+  links:
+    - "https://github.com/karlkzhu"
+    - "https://www.linkedin.com/in/karl-kai-zhu/"
 
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : false
   google:
     tracking_id          :
 
@@ -81,14 +67,14 @@ analytics:
 # Site Author
 author:
   name             : "Karl Zhu"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
-  location         : "Location"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  avatar           : "karlzhu.jpg"
+  bio              : "PhD student in Operations Research at MIT"
+  location         : "Cambridge, MA"
+  employer         : "Massachusetts Institute of Technology"
+  pubmed           :
+  googlescholar    :
+  email            : "karlzhu@mit.edu"
+  researchgate     :
   uri              :
   bitbucket        :
   codepen          :
@@ -96,20 +82,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "karlkzhu"
   google_plus      :
   keybase          :
   instagram        :
-  impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
+  impactstory      :
   lastfm           :
   linkedin         :  "karl-kai-zhu"
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            :
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  stackoverflow    :
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -199,7 +185,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
@@ -217,7 +203,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -226,7 +212,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _portfolio
   - scope:
       path: ""
@@ -235,7 +221,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comment: true
+      comments: false
   # _talks
   - scope:
       path: ""
@@ -255,7 +241,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York
 
 
 # Plugins
