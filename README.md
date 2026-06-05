@@ -11,4 +11,4 @@ bundle install
 bundle exec jekyll serve
 ```
 
-The site is configured through `_config.yml`. Page content lives in `_pages`, and academic content is organized in `_publications`, `_talks`, `_teaching`, and `_portfolio`.
+The site is configured through `_config.yml`. Page content lives in `_pages`, and academic content is organized in `_publications`, `_talks`, and `_teaching`.

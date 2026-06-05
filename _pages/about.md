@@ -12,6 +12,11 @@ I am a PhD student in Operations Research at MIT, advised by Prof. Dimitris Bert
 
 Before MIT, I completed a Bachelor of Engineering with First Class Honours in Engineering Science at the University of Auckland, advised by Prof. Andy Philpott. My undergraduate thesis studied multi-stage stochastic programming with distributionally robust optimization.
 
+CV
+======
+
+[Download CV](/files/Karl_Zhu_CV.pdf)
+
 Research
 ======
 

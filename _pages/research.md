@@ -10,17 +10,13 @@ author_profile: true
 Publications
 ======
 
-{% if author.googlescholar %}
-  You can also find my articles on <u><a href="{{author.googlescholar}}">my Google Scholar profile</a>.</u>
-{% endif %}
-
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+* {{ post.title }}. {% if post.venue %}{{ post.venue }}, {% endif %}{{ post.date | default: "1900-01-01" | date: "%Y" }}.
 {% endfor %}
 
 Talks
 ======
 
 {% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+* {{ post.title }}. {% if post.type %}{{ post.type }}, {% endif %}{% if post.venue %}{{ post.venue }}, {% endif %}{{ post.date | default: "1900-01-01" | date: "%Y" }}.
 {% endfor %}
