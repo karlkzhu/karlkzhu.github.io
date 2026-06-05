@@ -1,10 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
 # Site Settings
 locale                   : "en-US"
 title                    : "Karl Zhu"
@@ -19,17 +12,6 @@ breadcrumbs              : false
 words_per_minute         : 160
 future                   : false
 read_more                : "disabled"
-talkmap_link             : false
-comments:
-  provider               : false
-  disqus:
-    shortname            :
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
 atom_feed:
   path                   :
 
@@ -55,14 +37,6 @@ social:
   links:
     - "https://github.com/karlkzhu"
     - "https://www.linkedin.com/in/karl-kai-zhu/"
-
-
-# Analytics
-analytics:
-  provider               : false
-  google:
-    tracking_id          :
-
 
 # Site Author
 author:
@@ -185,7 +159,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: false
       share: true
       related: true
   # _pages
@@ -203,7 +176,6 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: false
   # _publications
   - scope:
       path: ""
@@ -212,7 +184,6 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: false
   # _portfolio
   - scope:
       path: ""
@@ -221,7 +192,6 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: false
   # _talks
   - scope:
       path: ""
