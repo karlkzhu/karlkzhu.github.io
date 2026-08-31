@@ -30,6 +30,27 @@ author_profile: true
 </ul>
 {% endif %}
 
+{% assign conference_proceedings = sorted_publications | where: "status", "conference-proceedings" %}
+{% if conference_proceedings.size > 0 %}
+### Conference Proceedings
+
+<ul class="publication-list">
+{% for post in conference_proceedings %}
+  <li>
+    <strong>
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}">{{ post.title }}</a>
+      {% else %}
+        {{ post.title }}
+      {% endif %}
+    </strong><br>
+    {% if post.authors %}{% assign authors = post.authors | replace: "Karl Zhu", "<strong>Karl Zhu</strong>" %}{{ authors }}.<br>{% endif %}
+    {% if post.venue or post.date %}{% if post.venue %}<em>{{ post.venue }}</em>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | date: "%Y" }}{% endif %}.{% endif %}
+  </li>
+{% endfor %}
+</ul>
+{% endif %}
+
 {% assign manuscripts_under_review = sorted_publications | where: "status", "under-review" %}
 {% if manuscripts_under_review.size > 0 %}
 ## Manuscripts Under Review
