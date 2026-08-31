@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student at the MIT Operations Research Center, advised by Prof. Dimitris Bertsimas. My research develops optimization and machine learning methods for high-stakes decision-making under uncertainty, with applications in energy systems and healthcare.
+I'm a PhD student in Operations Research at MIT, advised by Prof. Dimitris Bertsimas. I build optimization and machine learning models, develop new solution methods, and apply them to energy systems, electricity markets, and healthcare.
 
 Before MIT, I completed a Bachelor of Engineering with First Class Honours in Engineering Science at the University of Auckland, advised by Prof. Andy Philpott. My undergraduate thesis studied Markov decision processes and distributionally robust optimization.
 

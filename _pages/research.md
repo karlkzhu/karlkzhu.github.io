@@ -23,8 +23,8 @@ author_profile: true
         {{ post.title }}
       {% endif %}
     </strong><br>
-    {{ post.authors }}.<br>
-    <em>{{ post.venue }}</em>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
+    {% if post.authors %}{{ post.authors }}.<br>{% endif %}
+    {% if post.venue or post.date %}{% if post.venue %}<em>{{ post.venue }}</em>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | date: "%Y" }}{% endif %}.{% endif %}
   </li>
 {% endfor %}
 </ul>
@@ -44,8 +44,8 @@ author_profile: true
         {{ post.title }}
       {% endif %}
     </strong><br>
-    {{ post.authors }}.<br>
-    <em>{{ post.venue }}</em>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
+    {% if post.authors %}{{ post.authors }}.<br>{% endif %}
+    {% if post.venue or post.date %}{% if post.venue %}<em>{{ post.venue }}</em>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | date: "%Y" }}{% endif %}.{% endif %}
   </li>
 {% endfor %}
 </ul>
@@ -65,15 +65,9 @@ author_profile: true
         {{ post.title }}
       {% endif %}
     </strong><br>
-    {{ post.authors }}.<br>
-    <em>{{ post.venue }}</em>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
+    {% if post.authors %}{{ post.authors }}.<br>{% endif %}
+    {% if post.venue or post.date %}{% if post.venue %}<em>{{ post.venue }}</em>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | date: "%Y" }}{% endif %}.{% endif %}
   </li>
 {% endfor %}
 </ul>
 {% endif %}
-
-## Talks
-
-{% for post in site.talks reversed %}
-* {{ post.title }}. {% if post.type %}{{ post.type }}, {% endif %}{% if post.venue %}{{ post.venue }}, {% endif %}{{ post.date | default: "1900-01-01" | date: "%Y" }}.
-{% endfor %}
