@@ -12,30 +12,11 @@ author_profile: true
 ## Publications
 
 {% assign publications = sorted_publications | where: "status", "publication" %}
-{% if publications.size > 0 %}
-<ul class="publication-list">
-{% for post in publications %}
-  <li>
-    <strong>
-      {% if post.paperurl %}
-        <a href="{{ post.paperurl }}">{{ post.title }}</a>
-      {% else %}
-        {{ post.title }}
-      {% endif %}
-    </strong><br>
-    {% if post.authors %}{% assign authors = post.authors | replace: "Karl Zhu", "<strong>Karl Zhu</strong>" %}{{ authors }}.<br>{% endif %}
-    {% if post.venue or post.date %}{% if post.venue %}<em>{{ post.venue }}</em>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | date: "%Y" }}{% endif %}.{% endif %}
-  </li>
-{% endfor %}
-</ul>
-{% endif %}
-
 {% assign conference_proceedings = sorted_publications | where: "status", "conference-proceedings" %}
-{% if conference_proceedings.size > 0 %}
-### Conference Proceedings
-
+{% assign published_work = publications | concat: conference_proceedings %}
+{% if published_work.size > 0 %}
 <ul class="publication-list">
-{% for post in conference_proceedings %}
+{% for post in published_work %}
   <li>
     <strong>
       {% if post.paperurl %}
