@@ -2,7 +2,7 @@
 layout: archive
 title: "Teaching"
 permalink: /teaching/
-author_profile: true
+author_profile: false
 ---
 
 {% include base_path %}
@@ -15,7 +15,15 @@ author_profile: true
       <div class="teaching-timeline__content">
         <h2 class="teaching-timeline__institution">{{ post.venue }}</h2>
         <p class="teaching-timeline__role">{{ post.type }}{% if post.location %}<span aria-hidden="true"> · </span><span class="teaching-timeline__location">{{ post.location }}</span>{% endif %}</p>
-        <p class="teaching-timeline__courses"><span class="teaching-timeline__label">Courses:</span> <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></p>
+        {% if post.courses %}
+          <ul class="teaching-timeline__courses">
+            {% for course in post.courses %}
+              <li>{{ course }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="teaching-timeline__courses">{{ post.title }}</p>
+        {% endif %}
       </div>
     </article>
   {% endfor %}

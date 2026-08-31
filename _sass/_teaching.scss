@@ -61,9 +61,17 @@
   font-size: $type-size-4;
 }
 
-.teaching-timeline__role,
-.teaching-timeline__courses {
+.teaching-timeline__role {
   margin: 0.25rem 0 0;
+}
+
+.teaching-timeline__courses {
+  margin: 0.65rem 0 0;
+  padding-left: 1.25rem;
+
+  li + li {
+    margin-top: 0.25rem;
+  }
 }
 
 .teaching-timeline__role {
@@ -72,10 +80,6 @@
 
 .teaching-timeline__location {
   font-style: italic;
-}
-
-.teaching-timeline__label {
-  font-weight: bold;
 }
 
 @include breakpoint(max-width $small) {
