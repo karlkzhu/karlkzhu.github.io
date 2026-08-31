@@ -9,7 +9,7 @@
 .teaching-timeline__item {
   position: relative;
   display: grid;
-  grid-template-columns: 5rem 1fr;
+  grid-template-columns: 9rem 1fr;
   column-gap: 1.5rem;
   padding-bottom: 2rem;
 
@@ -17,7 +17,7 @@
     position: absolute;
     top: 0.4rem;
     bottom: 0;
-    left: 5.65rem;
+    left: 9.65rem;
     width: 1px;
     background: $border-color;
     content: "";
@@ -68,6 +68,14 @@
 
 .teaching-timeline__role {
   color: $gray;
+}
+
+.teaching-timeline__location {
+  font-style: italic;
+}
+
+.teaching-timeline__label {
+  font-weight: bold;
 }
 
 @include breakpoint(max-width $small) {

@@ -23,7 +23,7 @@ author_profile: true
         {{ post.title }}
       {% endif %}
     </strong><br>
-    {% if post.authors %}{{ post.authors }}.<br>{% endif %}
+    {% if post.authors %}{% assign authors = post.authors | replace: "Karl K. Zhu", "<strong>Karl K. Zhu</strong>" | replace: "Karl Zhu", "<strong>Karl Zhu</strong>" %}{{ authors }}.<br>{% endif %}
     {% if post.venue or post.date %}{% if post.venue %}<em>{{ post.venue }}</em>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | date: "%Y" }}{% endif %}.{% endif %}
   </li>
 {% endfor %}
@@ -44,7 +44,7 @@ author_profile: true
         {{ post.title }}
       {% endif %}
     </strong><br>
-    {% if post.authors %}{{ post.authors }}.<br>{% endif %}
+    {% if post.authors %}{% assign authors = post.authors | replace: "Karl K. Zhu", "<strong>Karl K. Zhu</strong>" | replace: "Karl Zhu", "<strong>Karl Zhu</strong>" %}{{ authors }}.<br>{% endif %}
     {% if post.venue or post.date %}{% if post.venue %}<em>{{ post.venue }}</em>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | date: "%Y" }}{% endif %}.{% endif %}
   </li>
 {% endfor %}
@@ -65,7 +65,7 @@ author_profile: true
         {{ post.title }}
       {% endif %}
     </strong><br>
-    {% if post.authors %}{{ post.authors }}.<br>{% endif %}
+    {% if post.authors %}{% assign authors = post.authors | replace: "Karl K. Zhu", "<strong>Karl K. Zhu</strong>" | replace: "Karl Zhu", "<strong>Karl Zhu</strong>" %}{{ authors }}.<br>{% endif %}
     {% if post.venue or post.date %}{% if post.venue %}<em>{{ post.venue }}</em>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | date: "%Y" }}{% endif %}.{% endif %}
   </li>
 {% endfor %}

@@ -11,11 +11,11 @@ author_profile: true
 <section class="teaching-timeline" aria-label="Teaching experience">
   {% for post in sorted_teaching %}
     <article class="teaching-timeline__item">
-      <div class="teaching-timeline__date">{{ post.date | default: "1900-01-01" | date: "%Y" }}</div>
+      <div class="teaching-timeline__date">{% if post.period %}{{ post.period }}{% else %}{{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</div>
       <div class="teaching-timeline__content">
         <h2 class="teaching-timeline__institution">{{ post.venue }}</h2>
-        <p class="teaching-timeline__role">{{ post.type }}</p>
-        <p class="teaching-timeline__courses"><a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></p>
+        <p class="teaching-timeline__role">{{ post.type }}{% if post.location %}<span aria-hidden="true"> · </span><span class="teaching-timeline__location">{{ post.location }}</span>{% endif %}</p>
+        <p class="teaching-timeline__courses"><span class="teaching-timeline__label">Courses:</span> <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a></p>
       </div>
     </article>
   {% endfor %}
