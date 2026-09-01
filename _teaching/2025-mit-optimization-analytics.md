@@ -8,9 +8,9 @@ date: 2025-01-01
 period: "2025 - 2026"
 location: "Cambridge, MA"
 courses:
-  - "15.727: The Analytics Edge"
-  - "15.C57: Optimization Methods"
   - "15.S60: Software Tools (two semesters)"
+  - "15.C57: Optimization Methods"
+  - "15.727: The Analytics Edge"
 ---
 
 Teaching assistant for 15.727 The Analytics Edge, 15.C57 Optimization Methods, and 15.S60 Software Tools (two semesters).
