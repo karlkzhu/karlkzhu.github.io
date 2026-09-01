@@ -141,6 +141,11 @@ collections:
 
 # Defaults
 defaults:
+  # Keep the XML sitemap limited to pages explicitly marked for discovery.
+  - scope:
+      path: ""
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""
